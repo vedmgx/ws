@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fonctionnalités xGM | Inversion 2D/3D Avancée et Outils IA</title>
+    
+    <meta name="description" content="Spécifications techniques détaillées, algorithmes principaux, capacités de traitement des données et exigences système pour les modules 2D et 3D de xGM, y compris l'accélération GPU et l'interprétation IA.">
+    
+    <meta name="keywords" content="fonctionnalités xGM, modélisation directe 2D, modélisation directe 3D, inversion 2D, inversion 3D, données gravimétriques, données magnétiques, accélération GPU, CUDA, interprétation IA, analyse d'ondelettes, déconvolution d'Euler, déconvolution de Werner, analyse spectrale, exigences système">
+    
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-accent">x</span>GM
+            </a>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="features.html" class="active">Fonctionnalités</a></li> 
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher" id="langSwitcher">
+                <div class="current-lang">
+                    <img src="../images/icons/flag_fr.svg" alt="Drapeau Français">
+                    <span>FR</span>
+                </div>
+                <div class="lang-dropdown">
+                    <a href="../features.html">
+                        <img src="../images/icons/flag_en.svg" alt="Drapeau Anglais">
+                        EN
+                    </a>
+                    <a href="/es/features.html">
+                        <img src="../images/icons/flag_es.svg" alt="Drapeau Espagnol">
+                        ES
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container content-wrapper">
+        
+        <section class="section about-section">
+            <h2 class="section-title">Fonctionnalités Détaillées du Logiciel</h2>
+            <p class="about-text">
+                xGM est une plateforme modulaire offrant des solutions 2D et 3D haute performance pour l'analyse, l'inversion et l'interprétation de données gravimétriques et magnétiques.
+            </p>
+        </section>
+
+        <section class="section features-section">
+            <h2 class="section-title">xGM-2D : Modélisation et Analyse Avancées</h2>
+            
+            <div class="product-feature-block">
+                <div class="product-visual">
+                    <img src="../images/xGM2D.png" alt="Aperçu de l'interface xGM-2D" class="feature-image">
+                </div>
+                
+                <div class="product-details">
+                    <h3 class="product-details-title">Capacités 2D Principales :</h3>
+                    <ul class="styled-list">
+                        <li><strong>Modélisation Directe et Inversion 2D :</strong> Modélisation directe et inverse de la gravité/magnétisme pour les modèles souterrains par <strong>blocs</strong> et par <strong>grille</strong>.</li>
+                        <li><strong>Calcul Haute Performance :</strong> Traitement multi-thread utilisant le <strong>CPU et le GPU</strong> pour des performances accélérées.</li>
+                        <li><strong>Construction de Modèles Interactive :</strong> Édition et ajustement en temps réel de modèles 2D par blocs et par grille.</li>
+                        <li><strong>Filtrage et Transformation des Données :</strong> <strong>Filtrage interactif des données 1D</strong> et calcul des <strong>transformantes</strong> de champs potentiels (continuation, gradients).</li>
+                        <li><strong>Outils d'Estimation de Profondeur :</strong> Méthodes de déconvolution, y compris la déconvolution d'<strong>Euler et de Werner</strong>.</li>
+                        <li><strong>Traitement Avancé du Signal :</strong> Analyse complète des <strong>ondelettes</strong> pour la décomposition du signal et l'extraction de caractéristiques.</li>
+                        <li><strong>Interopérabilité des Données :</strong> <strong>Importation et exportation</strong> transparentes des formats géophysiques standard de l'industrie.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section about-section">
+            <h2 class="section-title">xGM-3D : Inversion à Grande Échelle et Interprétation IA</h2>
+
+            <div class="product-feature-block reverse-order">
+                <div class="product-details">
+                    <h3 class="product-details-title">Fonctionnalités Avancées 3D et IA :</h3>
+                    <ul class="styled-list">
+                        <li><strong>Modélisation Directe et Inversion 3D :</strong> Modélisation directe et inverse de la gravité/magnétisme pour des modèles 3D complexes par <strong>blocs</strong> et par <strong>grille</strong>.</li>
+                        <li><strong>Traitement Haute Vitesse :</strong> Calcul multi-thread sur <strong>CPU et GPU</strong> pour des volumes massifs de données 3D.</li>
+                        <li><strong>Traitement Avancé des Données :</strong> <strong>Filtrage interactif 2D</strong> et calcul des <strong>transformantes</strong> de champs potentiels (continuation, gradients).</li>
+                        <li><strong>Affinement du Modèle 3D :</strong> <strong>Édition interactive</strong> de modèles 3D par blocs et par grille.</li>
+                        <li><strong>Prédiction de Prospections par IA :</strong> <strong>Prévision par IA</strong> des zones prospectives et prédiction des surfaces structurelles et des données manquantes.</li>
+                        <li><strong>Zonage et Analyse par IA :</strong> <strong>Zonage (régionalisation) par IA</strong> et analyse statistique approfondie dans des fenêtres glissantes.</li>
+                        <li><strong>Estimation de Profondeur :</strong> <strong>Analyse spectrale</strong> pour l'estimation des profondeurs des sources basée sur le logarithme du spectre.</li>
+                        <li><strong>Compatibilité Industrielle :</strong> <strong>Importation et exportation</strong> de tous les formats de données géophysiques standard.</li>
+                    </ul>
+                </div>
+                
+                <div class="product-visual">
+                    <img src="../images/xGM3D.png" alt="Aperçu de l'interface xGM-3D" class="feature-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="section features-section">
+            <h2 class="section-title">Exigences Système</h2>
+            <div class="grid-2-cols max-w-4xl mx-auto" style="margin-top: 2rem;">
+                <div class="license-card">
+                    <h3 class="license-title">Exigences Minimales</h3>
+                    <ul class="req-list">
+                        <li>OS : Windows 10/11 / Linux / MacOS</li>
+                        <li>CPU : Intel Core i5-7200U ou équivalent</li>
+                        <li>RAM : 4 Go (Plus peut être nécessaire pour les grands modèles 2D/3D)</li>
+                    </ul>
+                </div>
+                <div class="license-card">
+                    <h3 class="license-title">Configuration Recommandée</h3>
+                    <ul class="req-list">
+                        <li>OS : Windows 10/11 / Linux / MacOS</li>
+                        <li>CPU : Intel Core i7 (12e génération ou plus récent) ou équivalent</li>
+                        <li>RAM : 16 Go (Plus peut être nécessaire pour les grands modèles 2D/3D)</li>
+                        <li>GPU : Nvidia RTX 2060 ou plus récent (cartes graphiques compatibles CUDA uniquement)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Contact: info@x-gm.com</p>
+            <p class="footer-copy">© 2025 xGM. Tous droits réservés.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const langSwitcher = document.getElementById('langSwitcher');
+            const currentLang = langSwitcher.querySelector('.current-lang');
+            const langDropdown = langSwitcher.querySelector('.lang-dropdown');
+
+            currentLang.addEventListener('click', function(event) {
+                event.stopPropagation();
+                langDropdown.classList.toggle('active');
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!langSwitcher.contains(event.target)) {
+                    langDropdown.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

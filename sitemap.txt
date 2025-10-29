@@ -4,3 +4,6 @@ https://x-gm.com/contact.html
 https://x-gm.com/es/
 https://x-gm.com/es/features.html
 https://x-gm.com/es/contact.html
+https://x-gm.com/fr/
+https://x-gm.com/fr/features.html
+https://x-gm.com/fr/contact.html
