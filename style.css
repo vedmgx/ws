@@ -570,3 +570,82 @@ textarea.form-input {
     padding-top: 1rem;
     text-align: center;
 }
+
+
+/* --- 10. ЯЗЫКОВОЙ ПЕРЕКЛЮЧАТЕЛЬ --- */
+.lang-switcher {
+    position: relative;
+    display: flex; /* Для размещения флага и текста в одну линию */
+    align-items: center;
+    margin-left: 1rem;
+    cursor: pointer; /* Делаем весь блок кликабельным */
+}
+
+.lang-switcher .current-lang {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.lang-switcher .current-lang:hover {
+    border-color: var(--color-accent);
+    background-color: rgba(0, 183, 194, 0.1);
+}
+
+.lang-switcher .current-lang img {
+    width: 20px; /* Размер флага */
+    height: auto;
+    margin-right: 8px; /* Отступ между флагом и текстом */
+    border-radius: 3px; /* Немного закруглим углы флага */
+    box-shadow: 0 0 3px rgba(0,0,0,0.2); /* Небольшая тень для объема */
+}
+
+.lang-switcher .current-lang span {
+    color: var(--color-text-light);
+    font-weight: 600;
+}
+
+.lang-switcher .lang-dropdown {
+    display: none; /* Скрыто по умолчанию */
+    position: absolute;
+    top: 100%; /* Появляется под кнопкой */
+    left: 0;
+    background-color: var(--color-background-dark); /* Темный фон для выпадающего списка */
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    min-width: 120px;
+    z-index: 1000;
+    margin-top: 5px; /* Отступ от кнопки */
+    padding: 5px 0;
+}
+
+.lang-switcher .lang-dropdown.active {
+    display: block; /* Показать, когда активен */
+}
+
+.lang-switcher .lang-dropdown a {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.lang-switcher .lang-dropdown a:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+.lang-switcher .lang-dropdown a img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}

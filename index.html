@@ -16,6 +16,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
+    <meta name="google-site-verification" content="ВАШ_УНИКАЛЬНЫЙ_КОД"> 
 </head>
 <body>
     <header class="fixed-header">
@@ -30,6 +31,18 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div class="lang-switcher" id="langSwitcher">
+                <div class="current-lang">
+                    <img src="images/icons/flag_en.svg" alt="English Flag">
+                    <span>EN</span>
+                </div>
+                <div class="lang-dropdown">
+                    <a href="/es/">
+                        <img src="images/icons/flag_es.svg" alt="Spanish Flag">
+                        ES
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
     
@@ -143,5 +156,24 @@
             <p class="footer-copy">© 2025 xGM. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const langSwitcher = document.getElementById('langSwitcher');
+            const currentLang = langSwitcher.querySelector('.current-lang');
+            const langDropdown = langSwitcher.querySelector('.lang-dropdown');
+
+            currentLang.addEventListener('click', function(event) {
+                event.stopPropagation(); // Prevent click from bubbling to document and closing immediately
+                langDropdown.classList.toggle('active');
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!langSwitcher.contains(event.target)) {
+                    langDropdown.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
