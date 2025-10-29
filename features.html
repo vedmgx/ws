@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>xGM | High-Performance Geophysical Inversion Software</title>
+    <title>xGM Features | Advanced 2D/3D Inversion & AI Tools</title>
     
-    <meta name="description" content="xGM - 2D/3D gravity and magnetic data forward modeling and inversion software, data filtering, singular point localization and other features.">
+    <meta name="description" content="Detailed technical specifications, core algorithms, data processing capabilities, and system requirements for xGM 2D and 3D modules, including GPU acceleration and AI interpretation.">
     
-    <meta name="keywords" content="gravity, magnetic, inversion, forward modeling, geophysical software, 2D inversion, 3D inversion, data filtering, singular points, localization, geophysics, exploration, mining, oil and gas">
+    <meta name="keywords" content="xGM features, 2D forward modeling, 3D forward modeling, 2D inversion, 3D inversion, gravity data, magnetic data, GPU acceleration, CUDA, AI interpretation, wavelet analysis, Euler deconvolution, Werner deconvolution, spectral analysis, system requirements">
     
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
@@ -25,8 +25,8 @@
             </a>
             <nav class="main-menu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="features.html">Features</a></li> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html" class="active">Features</a></li> 
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -36,11 +36,11 @@
                     <span>EN</span>
                 </div>
                 <div class="lang-dropdown">
-                    <a href="/es/">
+                    <a href="/es/features.html">
                         <img src="images/icons/flag_es.svg" alt="Spanish Flag">
                         ES
                     </a>
-                    <a href="/fr/">
+                    <a href="/fr/features.html">
                         <img src="images/icons/flag_fr.svg" alt="French Flag">
                         FR
                     </a>
@@ -48,108 +48,82 @@
             </div>
         </div>
     </header>
-    
+
     <div class="main-container content-wrapper">
         
-        <section class="hero-section">
-            <div class="hero-bg"></div> 
-            
-            <h1 class="hero-title">
-                High-Performance Geophysical Inversion Software
-            </h1>
-            <p class="hero-subtitle">
-                Advanced 2D/3D gravity and magnetic data inversion with GPU acceleration and AI interpretation.
+        <section class="section about-section">
+            <h2 class="section-title">Detailed Software Features</h2>
+            <p class="about-text">
+                xGM is a modular platform offering high-performance 2D and 3D solutions for gravity and magnetic data analysis, inversion, and interpretation.
             </p>
-            
-            <div class="button-group">
-                <a href="contact.html" class="btn btn-primary">Request a Demo</a>
-                <a href="features.html" class="btn btn-secondary">See Features</a>
-            </div>
         </section>
 
+        <section class="section features-section">
+            <h2 class="section-title">xGM-2D: Advanced Modeling & Analysis</h2>
+            
+            <div class="product-feature-block">
+                <div class="product-visual">
+                    <img src="images/xGM2D.png" alt="xGM-2D Interface Overview" class="feature-image">
+                </div>
+                
+                <div class="product-details">
+                    <h3 class="product-details-title">Core 2D Capabilities:</h3>
+                    <ul class="styled-list">
+                        <li><strong>2D Forward & Inverse Modeling:</strong> Gravity/magnetic forward and inverse modeling for subsurface models by <strong>block</strong> and by <strong>grid</strong>.</li>
+                        <li><strong>High-Performance Computation:</strong> Multi-threaded processing utilizing both <strong>CPU and GPU</strong> for accelerated performance.</li>
+                        <li><strong>Interactive Model Building:</strong> Real-time editing and adjustment of 2D block and grid models.</li>
+                        <li><strong>Data Filtering & Transformation:</strong> <strong>Interactive 1D data filtering</strong> and calculation of potential field <strong>transformants</strong> (continuation, gradients).</li>
+                        <li><strong>Depth Estimation Tools:</strong> Deconvolution methods including <strong>Euler and Werner deconvolution</strong>.</li>
+                        <li><strong>Advanced Signal Processing:</strong> Comprehensive <strong>wavelet analysis</strong> for signal decomposition and feature extraction.</li>
+                        <li><strong>Data Interoperability:</strong> Seamless <strong>import and export</strong> of industry-standard geophysical formats.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
         <section class="section about-section">
-            <h2 class="section-title">About xGM</h2>
-            <p class="about-text">
-                xGM is a professional software package for gravity and magnetic data analysis and inversion, designed for geophysicists, researchers, and exploration companies.
-            </p>
-            <div class="grid-3-cols">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">CUDA Acceleration</h3>
-                    <p class="feature-desc">Execute large inversions up to 50x faster with GPU computing.</p>
+            <h2 class="section-title">xGM-3D: Large-Scale Inversion & AI Interpretation</h2>
+
+            <div class="product-feature-block reverse-order">
+                <div class="product-details">
+                    <h3 class="product-details-title">Advanced 3D & AI Features:</h3>
+                    <ul class="styled-list">
+                        <li><strong>3D Forward & Inverse Modeling:</strong> Gravity/magnetic forward and inverse modeling for complex 3D models by <strong>block</strong> and by <strong>grid</strong>.</li>
+                        <li><strong>High-Speed Processing:</strong> Multi-threaded computation across both <strong>CPU and GPU</strong> for massive 3D data volumes.</li>
+                        <li><strong>Advanced Data Processing:</strong> <strong>Interactive 2D filtering</strong> and calculation of potential field <strong>transformants</strong> (continuation, gradients).</li>
+                        <li><strong>3D Model Refinement:</strong> <strong>Interactive editing</strong> of 3D block and grid models.</li>
+                        <li><strong>AI Prospecting Prediction:</strong> <strong>AI-powered prediction</strong> of prospective areas and prediction of structural surfaces and missing data.</li>
+                        <li><strong>AI Zoning & Analysis:</strong> <strong>AI zoning (regionalization)</strong> and in-depth statistical analysis within sliding windows.</li>
+                        <li><strong>Depth Estimation:</strong> <strong>Spectral analysis</strong> for source depth estimation based on the logarithm of the spectrum.</li>
+                        <li><strong>Industry Compatibility:</strong> <strong>Import and export</strong> of all standard geophysical data formats.</li>
+                    </ul>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🧩</div>
-                    <h3 class="feature-title">Advanced Inversion</h3>
-                    <p class="feature-desc">Flexible a priori modeling and joint inversion capabilities.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="feature-title">AI Analysis</h3>
-                    <p class="feature-desc">Intelligent anomaly detection and pattern recognition tools.</p>
+                
+                <div class="product-visual">
+                    <img src="images/xGM3D.png" alt="xGM-3D Interface Overview" class="feature-image">
                 </div>
             </div>
         </section>
 
         <section class="section features-section">
-            <h2 class="section-title">Key Features</h2>
-            <div class="grid-3-cols max-w-6xl mx-auto">
-                <div class="feature-item-box">
-                    <p>2D & 3D Inversion on Arbitrary Surfaces</p>
-                </div>
-                <div class="feature-item-box">
-                    <p>Import of Standard Geophysical Formats</p>
-                </div>
-                <div class="feature-item-box">
-                    <p>Joint Inversion of Multiple Datasets</p>
-                </div>
-                <div class="feature-item-box">
-                    <p>Wavelet Filtering & Anomaly Localization</p>
-                </div>
-                <div class="feature-item-box">
-                    <p>Integration of a priori Data</p>
-                </div>
-                <div class="feature-item-box">
-                    <p>CPU/GPU Parallel Computation</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section screenshot-section">
-            <h2 class="section-title">Interface Overview</h2>
-            <div class="screenshot-group">
-                <div class="screenshot-image-wrapper">
-                    <img src="images/xGM2D.png" alt="xGM 2D Inversion Interface Screenshot" class="screenshot-image">
-                </div>
-                <div class="screenshot-image-wrapper">
-                    <img src="images/xGM3D.png" alt="xGM 3D Inversion Interface Screenshot" class="screenshot-image">
-                </div>
-            </div>
-        </section>
-
-        <section class="section license-section">
-            <h2 class="section-title">License Options</h2>
-            <div class="grid-3-cols max-w-6xl mx-auto">
-                
+            <h2 class="section-title">System Requirements</h2>
+            <div class="grid-2-cols max-w-4xl mx-auto" style="margin-top: 2rem;">
                 <div class="license-card">
-                    <h3 class="license-title">Monthly License</h3>
-                    <p class="license-desc">1 month with updates and technical support.</p>
-                    <p class="license-price">Upon Request</p>
-                    <a href="contact.html" class="btn btn-primary mt-6">Request a Quote</a>
+                    <h3 class="license-title">Minimum Requirements</h3>
+                    <ul class="req-list">
+                        <li>OS: Windows 10/11 / Linux / MacOS</li>
+                        <li>CPU: Intel Core i5-7200U or equivalent</li>
+                        <li>RAM: 4 GB (More may be needed for large 2D/3D models)</li>
+                    </ul>
                 </div>
-
                 <div class="license-card">
-                    <h3 class="license-title">Annual License</h3>
-                    <p class="license-desc">12 months with updates and technical support.</p>
-                    <p class="license-price">Upon Request</p>
-                    <a href="contact.html" class="btn btn-primary mt-6">Request a Quote</a>
-                </div>
-
-                <div class="license-card">
-                    <h3 class="license-title">Perpetual License</h3>
-                    <p class="license-desc">Lifetime access with 1 year of updates and technical support.</p>
-                    <p class="license-price">Upon Request</p>
-                    <a href="contact.html" class="btn btn-primary mt-6">Request a Quote</a>
+                    <h3 class="license-title">Recommended Configuration</h3>
+                    <ul class="req-list">
+                        <li>OS: Windows 10/11 / Linux / MacOS</li>
+                        <li>CPU: Intel Core i7 (12th Gen or newer) or equivalent</li>
+                        <li>RAM: 16 GB (More may be needed for large 2D/3D models)</li>
+                        <li>GPU: Nvidia RTX 2060 or newer (CUDA-enabled graphics cards only)</li>
+                    </ul>
                 </div>
             </div>
         </section>
