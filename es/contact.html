@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contacto del Equipo xGM | Consultas de Licencias y Soporte Técnico</title>
+    
+    <meta name="description" content="Póngase en contacto con el equipo de xGM para solicitar presupuestos de licencias, consultas de asociación y preguntas técnicas sobre el software de inversión gravimétrica y magnética.">
+    
+    <meta name="keywords" content="contacto xGM, soporte software geofísico, consultas de licencias, preguntas técnicas, contacto software gravedad, contacto software magnético, Bishkek, Kirguistán">
+    
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-accent">x</span>GM
+            </a>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="features.html">Características</a></li>
+                    <li><a href="contact.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher" id="langSwitcher">
+                <div class="current-lang">
+                    <img src="../images/icons/flag_es.svg" alt="Bandera Española">
+                    <span>ES</span>
+                </div>
+                <div class="lang-dropdown">
+                    <a href="../contact.html">
+                        <img src="../images/icons/flag_en.svg" alt="Bandera Inglesa">
+                        EN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container content-wrapper">
+        
+        <section class="section about-section">
+            <h2 class="section-title">Póngase en Contacto con Nuestro Equipo</h2>
+            <p class="about-text">
+                Para consultas sobre licencias, especificaciones técnicas o información general, por favor use los datos de contacto a continuación.
+            </p>
+            
+            <div class="max-w-xl mx-auto" style="margin-top: 3rem;">
+                
+                <div class="license-card contact-info-card">
+                    <h3 class="license-title" style="margin-bottom: 1.5rem;">Información de Contacto</h3>
+                    
+                    <p><strong>Consultas Generales:</strong></p>
+                    <p class="text-light-accent">info@x-gm.com</p>
+                    
+                    <p style="margin-top: 1.5rem;"><strong>Dirección Física:</strong></p>
+                    <p class="text-light-accent">Bishkek, Kirguistán</p>
+
+                    <p class="contact-note">
+                        Si no recibe una respuesta en 24 horas, por favor reenvíe su solicitud.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Contacto: info@x-gm.com</p>
+            <p class="footer-copy">© 2025 xGM. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const langSwitcher = document.getElementById('langSwitcher');
+            const currentLang = langSwitcher.querySelector('.current-lang');
+            const langDropdown = langSwitcher.querySelector('.lang-dropdown');
+
+            currentLang.addEventListener('click', function(event) {
+                event.stopPropagation();
+                langDropdown.classList.toggle('active');
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!langSwitcher.contains(event.target)) {
+                    langDropdown.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
